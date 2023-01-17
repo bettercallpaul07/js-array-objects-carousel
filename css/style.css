@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+
+}
+
+main {
+
+}
+
+footer {
+
+}
+
+
+.carousel {
+    position: absolute;
+
+    /* Poniamo l'elemento giusto al centro della pagina */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: lightcoral;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+
+}
+
+.carousel .slide {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.carousel .slide.current {
+    display: block;
+}
+
+.carousel .slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.previous-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    color: black;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    z-index: 3;
+
+}
+
+
+.thumbnails {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 25%;
+    background-color: red;
+    z-index: 2;
+
+}
+
+.next-button {
+    right: 10px;
+}
+
+.previous-button {
+    left: 10px;
+}
